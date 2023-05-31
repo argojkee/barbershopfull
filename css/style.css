@@ -691,6 +691,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
             display: flex;
          }
 
+         
 
          .media-list {
             gap: 40px;
@@ -700,6 +701,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
          .media-link {
             color: var(--title-light-theme);
+            transition: var(--timing-transition);
+         }
+
+         .media-link:hover,
+         .media-link:focus {
+            color: var(--hover-color);
          }
 
          .copyright {
