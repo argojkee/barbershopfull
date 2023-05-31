@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav-site">
+                <a href="./index.html" class="link logotype">
+                    <svg width="68" height="56">
+                        <use href="./images/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <ul class="list nav-list">
+                    <li><a href="#about-us" class="link link-header link-nav">Про нас</a> </li>
+                    <li><a href="#pricelist" class="link link-header link-nav">Послуги та ціни</a> </li>
+                    <li><a href="#our-masters" class="link link-header link-nav">Майстри</a> </li>
+                    <li><a href="#contacts-container" class="link link-header link-nav">Контакти</a> </li>
+                </ul>
+
+            </nav>
+
+            <a href="tel:380441111111" class="link link-header link-nav header-tel">+38 044 111 11 11</a>
+            <button type="button" class="button-text first-button header-button general-button">онлайн-запис</button>
+            <button type="button" class="menu-button menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"> 
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main> 
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-left-side">
+                <ul class="list hero-list line line-dark-color">
+                    <li>
+                        <a href="" class="link hero-social-link link-text"target="_blank">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="link hero-social-link link-text"target="_blank">Youtube</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="hero-info-container">
+                <p class="section-info hero-lozung line">A hair salon for men in Kyiv</p>
+                <h1 class="main-title">BarberShop</h1>
+                <p class="hero-info">Ми експерти у модних чоловічих стрижках.
+                Працюємо швидко, обережно та зі смаком.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <div class="container about-container">
+                <div class="work-examples">
+                    <ul class="list work-examples-list">
+                        <li class="work-examples-item">
+                            <picture>
+                                <source srcset="./images/examples/desktop/desktop-example-first.jpg 1x, ./images/examples/desktop/desktop-example-first-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./images/examples/tablet/tablet-example-first.jpg 1x, ./images/examples/tablet/tablet-example-first-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <img src="./images/examples/desktop/desktop-example-first.jpg" alt="Work example first" width="270" height="445"
+                                    class="work-examples-img">
+                            </picture>
+                        </li>
+
+                        <li class="work-examples-item">
+                            <picture>
+                                <source srcset="./images/examples/desktop/desktop-example-second.jpg 1x, ./images/examples/desktop/desktop-example-second-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                                <source srcset="./images/examples/tablet/tablet-example-second.jpg 1x, ./images/examples/tablet/tablet-example-second-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <img src="./images/examples/desktop/desktop-example-second.jpg" alt="Work example first" width="270" height="445"
+                                 class="work-examples-img">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-info-container">
+                <p class="section-info about-info line line-dark-color">Про нас</p>
+                <h2 class="about-title">Найкращий Барбершоп твого міста</h2>
+                <p class="about-mini-title">Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
+                <p class="small-text about-text">Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас. Ми команда, яка ніколи не зупиняється на
+                досягнутому і прагне змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш бути тим самим. Ми команда,
+                яка завжди з клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас приходить!</p>
+                <button type="button" class="button-text second-button general-button">онлайн-запис</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricelist" id="pricelist">
+            <div class="container">
+                <p class="section-info line price-info">Проведи час у компанії кращих майстрів</p>
+                <h2 class="section-title price-title">Послуги та ціни</h2>
+
+                <div class="pricelist-container">
+                <table class="pricelist-list pricelist-first-part">
+                    <tbody class="body-table first-body-table">
+                    
+                        <tr class="pricelist-item">
+                            <td class="service-name">Чоловіча стрижка</td>
+                            <td class="service-price">від 300 грн.</td>
+                        </tr>
+                        <tr class="pricelist-item">
+                            <td class="service-name">Стрижка бороди</td>
+                            <td class="service-price">від 200 грн.</td>
+                        </tr>
+                        <tr class="pricelist-item">
+                            <td class="service-name">Стрижка вусів</td>
+                            <td class="service-price">від 200 грн.</td>
+                        </tr>
+                        <tr class="pricelist-item">
+                            <td class="service-name">Гоління небезпечною бритвою</td>
+                            <td class="service-price">від 200 грн.</td>
+                        </tr>
+                        </tbody>
+                </table>
+
+                <table class="pricelist-list pricelist-second-part">
+                    <tbody class="body-table second-body-table">
+                        <tr class="pricelist-item">
+                            <td class="service-name">Стрижка у стажера</td>
+                            <td class="service-price">від 50 грн.</td>
+                        </tr>
+                        <tr class="pricelist-item">
+                            <td class="service-name">Стрижка під насадку</td>
+                            <td class="service-price">від 200 грн.</td>
+                        </tr>
+                        <tr class="pricelist-item">
+                            <td class="service-name">Дитяча стрижка (до 12 років)</td>
+                            <td class="service-price">від 300 грн.</td>
+                        </tr>
+                        <tr class="pricelist-item">
+                            <td class="service-name">Камуфлювання сивини</td>
+                            <td class="service-price">від 200 грн.</td>
+                        </tr>
+                        </tbody>
+                    
+                </table>
+                </div>
+
+                <button type="button" class="button-text general-button price-button">онлайн-запис</button>
+            </div>
+        </section>
+
+
+        <section class="why-coming">
+            <div class="container why-coming-container">
+                <div class="why-coming-mini-container">
+            <p class="section-info info-why-coming line line-dark-color">стара традиційна школа</p>
+            <h2 class="section-title title-why-coming">Чому приходять саме до нас?</h2>
+            <p class="middle-text middle-why-coming">Про нас говорять лише добре. Але краще 1 раз побачити і відчути, ніж 10 разів прочитати.</p>
+            </div>
+            <ul class="list why-coming-list">
+                <li class="why-coming-list-item">
+                    <p class="title-numbers number-ach">600<span class="numbers-plus">+</span></p>
+                    <p class="why-coming-text text-ach">Задоволених клієнтів на день</p>
+                </li>
+
+                <li class="why-coming-list-item">
+                    <p class="title-numbers number-ach">50<span class="numbers-plus">+</span></p>
+                    <p class="why-coming-text text-ach">Нагород за відмінний сервіс</p>
+                </li>
+
+                <li class="why-coming-list-item">
+                    <p class="title-numbers number-ach">20<span class="numbers-plus">+</span></p>
+                    <p class="why-coming-text text-ach">Найкращих майстрів Києва</p>
+                </li>
+
+                <li class="why-coming-list-item">
+                    <p class="title-numbers number-ach">100<span class="numbers-plus">+</span></p>
+                    <p class="why-coming-text text-ach">Подарунків постійним клієнтам</p>
+                </li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="our-masters" id="our-masters">
+            <div class="container our-masters-container">
+                <p class="section-info our-masters-info line line-dark-color">для справжніх шанувальників атмосфери</p>
+                <h2 class="section-title our-masters-title">Наші майстри</h2>
+                <ul class="list workers-list">
+                    <li class="workers-list-item">
+                        <picture>
+                            <source srcset="./images/desktop-masters-x1/johnsmith.jpg 1x, ./images/desktop-masters-x2/johnsmithx.jpg 2x" 
+                            media="(min-width: 1200px)">
+
+                            <source srcset="./images/tablet-masters-x1/johnsmith.jpg 1x, ./images/tablet-masters-x2/johnsmithx.jpg 2x"
+                                media="(min-width: 768px)">
+
+                            <source srcset="./images/mobile-masters-x1/johnsmith.jpg 1x, ./images/mobile-masters-x2/johnsmithx.jpg 2x"
+                                media="(min-width: 320px)">
+
+                            <img src="./images/desktop-masters-x1/johnsmith.jpg" alt="John Smith" width="370" height="346" class="photo-master">
+
+                        </picture>
+                        <div class="masters-info-container">
+                            <h3 class="name-workers">John Smith</h3>
+                            <p class="job-workers">Extreme Barber</p>
+                            <ul class="list social-list">
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="workers-list-item">
+
+                        <picture>
+                            <source srcset="./images/desktop-masters-x1/micheledoe.jpg 1x, ./images/desktop-masters-x2/micheledoex.jpg 2x"
+                                media="(min-width: 1200px)">
+                        
+                            <source srcset="./images/tablet-masters-x1/micheledoe.jpg 1x, ./images/tablet-masters-x2/micheledoex.jpg 2x"
+                                media="(min-width: 768px)">
+                        
+                            <source srcset="./images/mobile-masters-x1/micheledoe.jpg 1x, ./images/mobile-masters-x2/micheledoex.jpg 2x"
+                                media="(min-width: 320px)">
+                        
+                            <img src="./images/desktop-masters-x1/micheledoe.jpg" alt="Michele Doe" width="370" height="346" class="photo-master">
+                        
+                        </picture>
+
+
+
+
+
+
+                        <div class="masters-info-container">
+                            <h3 class="name-workers">Michele Doe</h3>
+                            <p class="job-workers">Extreme Barber</p>
+                            <ul class="list social-list">
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="workers-list-item">
+                        <picture>
+                            <source srcset="./images/desktop-masters-x1/alanblack.jpg 1x, ./images/desktop-masters-x2/alanblackx.jpg 2x"
+                                media="(min-width: 1200px)">
+                        
+                            <source srcset="./images/tablet-masters-x1/alanblack.jpg 1x, ./images/tablet-masters-x2/alanblackx.jpg 2x"
+                                media="(min-width: 768px)">
+                        
+                            <source srcset="./images/mobile-masters-x1/alanblack.jpg 1x, ./images/mobile-masters-x2/alanblackx.jpg 2x"
+                                media="(min-width: 320px)">
+                        
+                            <img src="./images/desktop-masters-x1/alanblack.jpg" alt="Michele Doe" width="370" height="346"
+                                class="photo-master">
+                        
+                        </picture>
+                        <div class="masters-info-container">
+                            <h3 class="name-workers">Alan Black</h3>
+                            <p class="job-workers">Extreme Barber</p>
+                            <ul class="list social-list">
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                                <li class="social-list-item">
+                                    <a href="" class="link social-link" target="_blank">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="galery">
+            <div class="container">
+                <h2 hidden>Работы</h2>
+                <p class="galery-info line line-dark-color">Латинською мовою "барба" означає "борода"</p>
+                <ul class="list galery-list">
+                    <li class="galery-list-item">
+                        <picture>
+                            <source srcset="./images/desktop-galery-x1/one.jpg 1x, ./images/desktop-galery-x2/onex.jpg 2x"
+                            media="(min-width: 1200px)">
+
+                            <source srcset="./images/tablet-galery-x1/one.jpg 1x, ./images/tablet-galery-x2/onex.jpg 2x"
+                                media="(min-width: 768px)">
+
+                            <source srcset="./images/mobile-galery-x1/one.jpg 1x, ./images/mobile-galery-x2/onex.jpg 2x"
+                                media="(min-width: 320px)">
+
+                            <img src="./images/desktop-galery-x1/one.jpg" alt="Example" width="370" height="360" class="photo-galery">
+                        </picture>
+
+                    </li>
+
+                    <li class="galery-list-item">
+                        <picture>
+                            <source srcset="./images/desktop-galery-x1/two.jpg 1x, ./images/desktop-galery-x2/twox.jpg 2x"
+                            media="(min-width: 1200px)">
+
+                            <source srcset="./images/tablet-galery-x1/two.jpg 1x, ./images/tablet-galery-x2/twox.jpg 2x"
+                                media="(min-width: 768px)">
+
+                            <source srcset="./images/mobile-galery-x1/two.jpg 1x, ./images/mobile-galery-x2/twox.jpg 2x"
+                                media="(min-width: 320px)">
+
+                            <img src="./images/desktop-galery-x1/two.jpg" alt="Example" width="370" height="360" class="photo-galery">
+                        </picture>
+                    </li>
+
+                    <li class="galery-list-item">
+                        <picture>
+                            <source srcset="./images/desktop-galery-x1/three.jpg 1x, ./images/desktop-galery-x2/threex.jpg 2x"
+                            media="(min-width: 1200px)">
+
+                            <source srcset="./images/tablet-galery-x1/three.jpg 1x, ./images/tablet-galery-x2/threex.jpg 2x"
+                                media="(min-width: 768px)">
+
+                            <source srcset="./images/mobile-galery-x1/three.jpg 1x, ./images/mobile-galery-x2/threex.jpg 2x"
+                                media="(min-width: 320px)">
+
+                            <img src="./images/desktop-galery-x1/three.jpg" alt="Example" width="370" height="360" class="photo-galery">
+                        </picture>
+                    </li>
+
+                    <li class="galery-list-item">
+                        <picture>
+                            <source srcset="./images/desktop-galery-x1/four.jpg 1x, ./images/desktop-galery-x2/fourx.jpg 2x"
+                            media="(min-width: 1200px)">
+
+                            <source srcset="./images/tablet-galery-x1/four.jpg 1x, ./images/tablet-galery-x2/fourx.jpg 2x"
+                                media="(min-width: 768px)">
+
+                            <source srcset="./images/mobile-galery-x1/four.jpg 1x, ./images/mobile-galery-x2/fourx.jpg 2x"
+                                media="(min-width: 320px)">
+
+                            <img src="./images/desktop-galery-x1/four.jpg" alt="Example" width="370" height="360" class="photo-galery">
+                        </picture>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <div class="contacts">
+            <div class="container online-contacts-container">
+                <section class="online-container">
+                    <p class="section-title online-title">Онлайн-запис</p>
+                    <form class="online-form">
+                            <input class="online-input form-style" type="text" name="user_name" placeholder="NAME*" required>
+                            <input class="online-input form-style" type="tel" name="user_phone" placeholder="PHONE*" required>
+                            <textarea class="online-textarea form-style" type="text" name="message" placeholder="MESSAGE"></textarea>
+                            <button class="button-text online-button" type="submit">Send</button>
+                    </form>
+                </section>
+
+                <section class="contacts-container" id="contacts-container">
+                    <p class="section-title contacts-title">Контакти</p>
+                    <div class="contacts-mini-container">
+                    
+                    <ul class="list contacts-list mini-container-item">
+                        <li class="contacts-list-item">
+                            <a href="https://goo.gl/maps/dm7uhxpx3GkHBbAA8?coh=178571&entry=tt" class="link contacts-link middle-text"
+                                target="_blank">
+                            <svg width="24" height="24" class="contacts-icon">
+                                <use href="./images/sprite.svg#geo"></use>
+                            </svg>
+                            вул. Василькова, 7А Київ, 08132</a> </li>
+
+
+                        <li class="contacts-list-item">
+                            <a href="tel:380441111111" class="link contacts-link middle-text">
+                                <svg width="24" height="24" class="contacts-icon">
+                                    <use href="./images/sprite.svg#phone"></use>
+                                </svg>
+                                +38 044 111 11 11</a> </li>
+
+
+                        <li class="contacts-list-item">
+                            <a href="mailto:barbershop@email.com" class=" contacts-link middle-text">
+                                <svg width="24" height="24" class="contacts-icon">
+                                    <use href="./images/sprite.svg#mail"></use>
+                                </svg>
+                                barbershop@email.com</a> </li>
+                    </ul>
+                    
+
+                    <div class="work-time mini-container-item">
+                        <p class="section-info time-info-title line">час роботи</p>
+                        <p class="mobile-text time-info">Щоденно з 9:00 до 22:00</p>
+                    
+                    </div>
+                </div>
+                </section>
+               
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <ul class="list media-list line line-dark-color">
+                <li><a href="" class="link-text link media-link" target="_blank">Instagram</a> </li>
+                <li><a href="" class="link-text link media-link" target="_blank">Youtube</a> </li>
+            </ul>
+            <p class="link-text copyright">&#169 Copyright 2020</p>
+        </div>
+    </footer>
+
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu close-menu-btn">
+        <svg class="close-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+
+    <ul class="list mobile-nav-list">
+        <li><a href="" class="mobile-nav-link link">Про нас</a></li>
+        <li><a href="" class="mobile-nav-link link">Послуги та ціни</a></li>
+        <li><a href="" class="mobile-nav-link link">Майстри</a></li>
+        <li><a href="" class="mobile-nav-link link">Контакти</a></li>
+    </ul>
+
+    <a href="tel:380441111111" class="mobile-nav-link mobile-tel link">+38 044 111 11 11</a>
+    <button class="mobile-button button-text">онлайн-запис</button>
+    <div class="mobile-media-container">
+    <ul class="list mobile-media-list">
+        <li><a href="" class="link mobile-media-link" target="_blank">Instagram</a></li>
+        <li><a href="" class="link mobile-media-link" target="_blank">Youtube</a></li>
+    </ul>
+    </div>
+</div>
+
+<script src="./js/mobile-menu.js"></script>
+</body>
+</html>
