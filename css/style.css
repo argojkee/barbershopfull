@@ -138,6 +138,7 @@ margin-bottom: 0;
 
 
 .name-workers {
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.39; /* 25px */
     letter-spacing: 0.02em;
@@ -239,9 +240,7 @@ margin-bottom: 0;
     margin-bottom: 20px;
 }
 
-.hero-info-container {
-            background-color: var(--title-light-theme);
-}
+
 
 .hero-info {
     letter-spacing: 0.02em;
@@ -541,9 +540,9 @@ screen and (min-resolution: 2dppx) and (min-width: 768px)  and (max-width: 1199p
 
 /* Desktop contacts image */
 
-@media screen and (max-device-pixel-ratio: 1) and (min-width: 1158px),
-screen and (max-resolution: 96dpi) and (min-width: 1158px),
-screen and (max-resolution: 1dppx) and (min-width: 1158px) {
+@media screen and (max-device-pixel-ratio: 1) and (min-width: 1200px),
+screen and (max-resolution: 96dpi) and (min-width: 1200px),
+screen and (max-resolution: 1dppx) and (min-width: 1200px) {
     .contacts {
         background-image: linear-gradient(rgba(25, 28, 38, 0.9),
                 rgba(25, 28, 38, 0.9)),
@@ -552,9 +551,9 @@ screen and (max-resolution: 1dppx) and (min-width: 1158px) {
 }
 
 /* Desktop contacts image 2px */
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-screen and (min-resolution: 192dpi) and (min-width: 1158px),
-screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .contacts {
         background-image: linear-gradient(rgba(25, 28, 38, 0.9),
                 rgba(25, 28, 38, 0.9)),
@@ -724,7 +723,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 /* Только мобилка */
 @media screen and (max-width: 767px) {
     .container {
-        width: 480px;
+        max-width: 480px;
 
     }
 
@@ -738,6 +737,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
      background-color: var(--title-dark-theme);
      z-index: 999;
      padding: 118px 40px 118px 31px;
+    overflow: auto;
 
      transform: translateX(100%);
      transition: transform var(--timing-transition);
@@ -884,12 +884,20 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     .hero-left-side {
         display: none;
     }
+
+    .hero-section {
+        background-color: var(--title-light-theme);
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                        url(../images/mobile-bg-hero.jpg);
+                        background-size: cover;
+                        background-position: center;
+
+    }
     .hero-info-container {
         padding-top: 208px;
         padding-bottom: 183px;
         padding-left: 31px;
-        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-                            url(../images/mobile-bg-hero.jpg);
+
     }
 
     /*About us*/
@@ -899,6 +907,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     }
     .about-title {
         font-size: 28px;
+        max-width: 364px;
     }
 
     .work-examples {
@@ -987,7 +996,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         text-align: center;
     }
 
-   .contacts-list {
+   .mini-container-item {
     margin-bottom: 44px;
    }
 
@@ -1044,9 +1053,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
     /*Почему к нам */
 
-    .middle-why-coming {
-        margin-bottom: 44px;
-    }
+   .why-coming-mini-container {
+    margin-bottom: 44px;
+   }
     /*Наши работники */
 
 .workers-list-item:not(:last-child) {
@@ -1108,6 +1117,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     padding-left: 36px;
 }
 
+
+
 .hero-info-container {
     padding-left: 120px;
     padding-bottom: 245px;
@@ -1127,6 +1138,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .about-title {
     font-size: 26px;
+    max-width: 330px;
 }
 
 .work-examples-list {
@@ -1238,6 +1250,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         /*Mobile menu*/
             .menu-container {
                 display: none;
+                
             }
     /*Header*/
     .header {
@@ -1392,6 +1405,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
     .nav-list {
         column-gap: 40px;
+    }
+
+    .header-tel {
+        margin-left: auto;
+        margin-right: 40px;
     }
 /*Hero-section*/
 
